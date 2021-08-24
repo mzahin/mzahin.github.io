@@ -102,7 +102,7 @@
                 <ul class="list-inline list-social-icons mb-0">
                     <li class="list-inline-item">
                         <!--<a href="linkedin://profile?id=muhammadzahinbinsamsuddin" target="_blank">-->
-                        <a href="https://my.linkedin.com/in/zahinsamsuddin/" target="_blank">
+                        <a href="https://my.linkedin.com/in/zahinsamsuddin/" target="_blank" data-toggle="tooltip" data-original-title="LinkedIn">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -110,7 +110,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://sites.google.com/view/zahinsamsuddin/" target="_blank">
+                        <a href="https://sites.google.com/view/zahinsamsuddin/" target="_blank" data-toggle="tooltip" data-original-title="Portfolio Gallery">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-user-circle fa-stack-1x fa-inverse"></i>
@@ -118,7 +118,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://www.facebook.com/zahinsamsuddin/" target="_blank">
+                        <a href="https://www.facebook.com/zahinsamsuddin/" target="_blank" data-toggle="tooltip" data-original-title="Facebook">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -126,10 +126,18 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://www.instagram.com/zahinsamsuddin/" target="_blank">
+                        <a href="https://www.instagram.com/zahinsamsuddin/" target="_blank" data-toggle="tooltip" data-original-title="Instagram">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://central.mymagic.my/cv/zahinsamsuddin/" target="_blank" data-toggle="tooltip" data-original-title="MaGIC Talentbank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
@@ -484,6 +492,14 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({
+                placement : 'top'
+            });
+        });
+    </script>
 
 </body>
 </html>
