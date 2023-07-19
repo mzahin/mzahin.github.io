@@ -1,0 +1,18 @@
+/* Add arrow on hover */
+.arrow-link {
+  position: relative;
+}
+
+.arrow-link::after {
+  content: " ➤"; /* You can change this to any arrow icon you prefer */
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.arrow-link:hover::after {
+  opacity: 1;
+}
